@@ -43,7 +43,7 @@ static void signalHandler(int signal_number) {
 }
 
 OPInitialize {
-	appSupport = [@"~/Library/Application Support/Opee" stringByExpandingTildeInPath];
+	appSupport = @"/usr/local";
 	execPath = NSProcessInfo.processInfo.arguments[0];
 	blocksFile = [appSupport stringByAppendingPathComponent:@"blocks.plist"];
 	
