@@ -5,6 +5,9 @@ even better crash handler for opee
 ```
 Build safeload
 Place in /Library/Opee/Extensions
+Make /usr/local writeable to $USER
+  chown -R $USER /usr/local
+  chmod -R 755 /usr/local
 ```
 
 **Currently only works with my fork of [Opee](https://github.com/mstg/Opee)**
